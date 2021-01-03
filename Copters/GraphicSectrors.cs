@@ -90,9 +90,9 @@ namespace Copters
         {
 
             RadialCoodrs LeftInner      = new RadialCoodrs(InnerRadius,                 StartPhi,               GetPictureBorders(), LandingRadius);
-            RadialCoodrs LeftOutter   = new RadialCoodrs(InnerRadius + deltaRadius,   StartPhi,               GetPictureBorders(), LandingRadius);
+            RadialCoodrs LeftOutter     = new RadialCoodrs(InnerRadius + deltaRadius,   StartPhi,               GetPictureBorders(), LandingRadius);
             RadialCoodrs RigthInner     = new RadialCoodrs(InnerRadius,                 StartPhi + deltaPhi,    GetPictureBorders(), LandingRadius);
-            RadialCoodrs RigthOutter  = new RadialCoodrs(InnerRadius + deltaRadius,   StartPhi + deltaPhi,    GetPictureBorders(), LandingRadius);
+            RadialCoodrs RigthOutter    = new RadialCoodrs(InnerRadius + deltaRadius,   StartPhi + deltaPhi,    GetPictureBorders(), LandingRadius);
 
             using (Graphics Canvas = Graphics.FromImage(Picture))
             {
