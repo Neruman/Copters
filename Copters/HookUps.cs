@@ -11,7 +11,7 @@ namespace Copters
     {
         public bool IsPositive()
         {
-            if (Math.Sin(phi * Math.PI / 180) >= 0.4999)//((phi >= 30) & (phi <= 120))
+            if (Math.Sin(phi * Math.PI / 180) >= 0.5001)//((phi >= 30) & (phi <= 120))
             {
                 return true;
             }

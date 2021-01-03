@@ -32,7 +32,7 @@ namespace Copters
         protected HookUps HookUp1;
         protected HookUps HookUp2;
         protected HookUps HookUp3;
-
+        
         public HookUps GetHookUp1
         {
             get => HookUp1;
@@ -136,6 +136,11 @@ namespace Copters
         public float GetY()
         {
             float result = (float)(rect.Height / 2 *(1-y/LandingRadius));
+            return result;
+        }
+        public Point ToPoint()
+        {
+            Point result = new Point((int)GetX(), (int)GetY());
             return result;
         }
     }
